@@ -48,21 +48,6 @@ Stack::~Stack()
     if (head == nullptr) {
         return;
     }
-    /*else if (head->p_next == nullptr) {
-        delete head;
-        head = nullptr;
-        return;
-    }
-
-    Node* tail = head->p_next;
-    while (tail->p_next != nullptr) {
-        Node* delthis = tail;
-        tail = tail->p_next;
-        delete delthis;
-        delthis = nullptr;
-    }
-    delete tail;
-    tail = nullptr;*/
     delete head;
     head = nullptr;
 }
